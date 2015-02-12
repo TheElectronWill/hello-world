@@ -46,6 +46,16 @@ Localement: <code>git checkout brancheLocale</code>
 Tout d'un coup: <code>git commit -a</code>
 </p>
 
+<center><b>Appliquer les commit locaux sur le serveur</b></center>
+<p>
+<code>git push</code>
+</p>
+
+<center><b>Voir les changements des fichiers locaux par rapport au dernier commit</b></center>
+<p>
+<code>git status</code>
+</p>
+
 <center><b>Annuler un commit local</b></center>
 Méthode soft (seul le commit et retiré, les fichiers restent tels quels):
 <p>
@@ -65,11 +75,6 @@ Méthode hard (le commit et retiré et les changements annulés):
 <center><b>Voir la liste des commits locaux</b></center>
 <p>
 <code>git log</code>
-</p>
-
-<center><b>Voir les changements par rapport au dernier commit local</b></center>
-<p>
-<code>git status</code>
 </p>
 
 <center><b>Faire redevenir un fichier comme il était au dernier commit</b></center>
