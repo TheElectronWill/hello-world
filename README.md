@@ -4,7 +4,11 @@
 cd dossier</code>
 
 <center><b>Récupérer une branche qui est sur le serveur:</b></center>
+<p>Avec les mêmes noms en local et sur le serveur (plus simple):<br>
+<code>git checkout brancheDistante</code>
+</p>
 <p>
+Avec des noms différents (plus compliqué mais plus personnalisable):<br>
 <code>git checkout -b brancheLocale #Pour créer la branche localement.</code><br>
 Pour récupérer la brancheDistante depuis Github et la lier à la brancheLocale:<br>
 <code>git branch --set-upstream-to=origin/brancheDistante brancheLocale</code> 
