@@ -5,18 +5,19 @@ cd dossier</code>
 
 <center><b>Récupérer une branche qui est sur le serveur:</b></center>
 <p>
-<code>git checkout -b brancheLocale #Pour créer la branche localement.
-<code>git branch --set-upstream-to=origin/brancheDistante brancheLocale #Pour récupérer la brancheDistante depuis Github et la lier à la brancheLocale</code>
+<code>git checkout -b brancheLocale #Pour créer la branche localement.</code><br>
+Pour récupérer la brancheDistante depuis Github et la lier à la brancheLocale:<br>
+<code>git branch --set-upstream-to=origin/brancheDistante brancheLocale</code> 
 </p>
 
 <center><b>Envoyer une branche locale sur le serveur:</b></center>
 <p>
 <code>git push --set-upstream origin brancheLocale</locale>
-<p>
+</p>
 
 <center><b>Supprimer une branche</b></center>
 <p>
-Localement: <code>git branch -d brancheLocale</code>
+Localement: <code>git branch -d brancheLocale</code><br>
 Sur le serveur: <code>git push origin --delete brancheDistante</code>
 </p>
 
@@ -42,7 +43,7 @@ Localement: <code>git checkout brancheLocale</code>
 
 <center><b>Enregistrer les modifications sur la branche locale</b></center>
 <p>
-<code>git commit fichierA fichierB ...</code>
+<code>git commit fichierA fichierB ...</code><br>
 Tout d'un coup: <code>git commit -a</code>
 </p>
 
@@ -59,17 +60,17 @@ Tout d'un coup: <code>git commit -a</code>
 <center><b>Annuler un commit local</b></center>
 Méthode soft (seul le commit et retiré, les fichiers restent tels quels):
 <p>
-<code>git reset HEAD #Dernier commit</code>
-<code>git reset HEAD^ #Avant-dernier commit</code>
-<code>git reset HEAD~2 #Avant-avant-dernier commit</code>
-<code>git reset numeroDuCommit #Commit n°... (pas besoin de mettre tout le numéro, juste les 4-5 premiers chiffres)</code>
+Dernier commit:<code>git reset HEAD #Dernier commit</code><br>
+Avant-dernier commit:<code>git reset HEAD^</code><br>
+Avant-avant-dernier:<code>git reset HEAD~2 </code><br>
+Commit numéro x:<code>git reset numeroDuCommit</code> (pas besoin de mettre tout le numéro, juste les 4-5 premiers chiffres)
 </p>
-Méthode hard (le commit et retiré et les changements annulés):
+Méthode hard (le commit et retiré et les changements annulés): Même chose mais avec l'option --hard:
 <p>
-<code>git reset --hard HEAD #Dernier commit</code>
-<code>git reset --hard HEAD^ #Avant-dernier commit</code>
-<code>git reset --hard HEAD~2 #Avant-avant-dernier commit</code>
-<code>git reset --hard numeroDuCommit #Commit n°... (pas besoin de mettre tout le numéro, juste les 4-5 premiers chiffres)</code>
+<code>git reset --hard HEAD</code><br>
+<code>git reset --hard HEAD^</code><br>
+<code>git reset --hard HEAD~2</code><br>
+<code>git reset --hard numeroDuCommit</code>
 </p>
 
 <center><b>Voir la liste des commits locaux</b></center>
